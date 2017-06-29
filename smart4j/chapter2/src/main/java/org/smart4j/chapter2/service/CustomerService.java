@@ -2,9 +2,9 @@ package org.smart4j.chapter2.service;
 
 import java.util.List;
 import java.util.Map;
-import java.util.Observable;
-
 import org.smart4j.chapter2.model.Customer;
+
+
 /**
  * Created by AA on 2017/6/28.
  */
