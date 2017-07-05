@@ -12,6 +12,12 @@ import org.slf4j.LoggerFactory;
 import org.smart4j.chapter2.model.Customer;
 import org.smart4j.chapter2.util.PropsUtil;
 
+/*
+create table customer (id int,name char(255),contact char(255),telephone char(255),email char(255),remark text,PRIMARY KEY (id));
+
+INSERT INTO customer(id,name,contact,telephone,email,remark) VALUES(1, 'customer1', 'Jack', '12333232342', 'jack@gmail.com', null);
+INSERT INTO customer(id,name,contact,telephone,email,remark) VALUES(2, 'customer1', 'Rose', '12333232542', 'rose@gmail.com', null);
+ */
 
 /**
  * Created by AA on 2017/6/28.
@@ -58,7 +64,7 @@ public class CustomerService {
         }
     }
 
-    public List<Customer> getCustomerList(String keyword){
+    public List<Customer> getCustomerList(){
         Connection connection = null;
 
         try {
