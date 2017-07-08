@@ -29,6 +29,7 @@ public final class ReflectionUtil {
     public static Object invokeMethod(Object obj, Method method, Object... args) {
         Object result;
         try {
+            //将此对象的 accessible 标志设置为指示的布尔值。值为 true 则指示反射的对象在使用时应该取消 Java 语言访问检查。值为 false 则指示反射的对象应该实施 Java 语言访问检查。
             method.setAccessible(true);
             result = method.invoke(obj, args);
         } catch (Exception e) {
